@@ -2,7 +2,7 @@ name: Update Trivia Questions
 
 on:
   schedule:
-    - cron: '0 14 26 6 *'
+    - cron: '0 14 25 6 *'
 
 jobs:
   update:
