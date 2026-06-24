@@ -5,7 +5,7 @@ import os
 from datetime import date
 
 today = date.today()
-target = date(2026, 6, 26)
+target = date(2026, 6, 25)
 
 if today != target:
     print(f"Today is {today} — not the target date. Exiting without making any changes.")
