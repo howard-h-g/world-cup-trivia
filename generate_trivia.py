@@ -21,7 +21,7 @@ message = client.messages.create(
     messages=[
         {
             "role": "user",
-            "content": """Generate 25 expert-level World Cup trivia questions for a soccer coach who follows the sport obsessively. Cover tactics, coaching decisions, obscure records, specific match moments, and player details that casual fans wouldn't know.
+            "content": """Generate 10 expert-level World Cup trivia questions for a soccer coach who follows the sport obsessively. Cover tactics, coaching decisions, obscure records, specific match moments, and player details that casual fans wouldn't know.
 
 Return ONLY a JSON array, no preamble, no markdown, no backticks. Each object must have exactly these fields:
 - q: the question string
