@@ -30,7 +30,7 @@ Example format:
 raw = message.content[0].text.strip()
 questions = json.loads(raw)
 
-with open("world_cup_trivia.html", "r") as f:
+with open("index.html", "r") as f:
     html = f.read()
 
 questions_js = json.dumps(questions, indent=2)
