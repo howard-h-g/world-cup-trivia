@@ -2,8 +2,8 @@ name: Update Trivia Questions
 
 on:
   schedule:
-    - cron: '0 14 25 6 *'
-
+    - cron: '0 14 26 6 *'
+    workflow_dispatch:
 jobs:
   update:
     runs-on: ubuntu-latest
