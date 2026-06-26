@@ -34,10 +34,12 @@ questions = json.loads(raw)
 with open("index.html", "r") as f:
     html = f.read()
 
-questions_js = json.dumps(questions, indent=2)
+questions_js = json.dumps(questions, indent=2, ensure_ascii=False)
 new_block = f"const questions = {questions_js};"
 
-html = re.sub(r"const questions = \[.*?\];", new_block, html, flags=re.DOTALL)
+start = html.index("const questions = [")
+end = html.index("];", start) + 2
+html = html[:start] + new_block + html[end:]
 
 with open("index.html", "w") as f:
     f.write(html)
