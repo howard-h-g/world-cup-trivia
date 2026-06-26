@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add world_cup_trivia.html
+          git add index.html
           git commit -m "Trivia update for June 26, 2026"
           git push
