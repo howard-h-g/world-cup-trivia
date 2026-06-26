@@ -18,7 +18,7 @@ client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 prompt = "Generate 10 expert-level World Cup trivia questions for a soccer coach who follows the sport obsessively. Cover tactics, coaching decisions, obscure records, specific match moments, and player details that casual fans wouldn't know. Return ONLY a JSON array, no preamble, no markdown, no backticks. Each object must have exactly these fields: q (the question string), opts (array of exactly 4 answer strings), answer (integer index 0-3 of the correct answer), category (one of Tactics, Coaching, Goals, Records, Moments, Legends, Goalkeepers, History), fun (a 2-3 sentence follow-up fact). Example format: [{\"q\":\"...\",\"opts\":[\"...\",\"...\",\"...\",\"...\"],\"answer\":0,\"category\":\"Tactics\",\"fun\":\"...\"}]"
 
 message = client.messages.create(
-    model="claude-sonnet-latest",
+    model="claude-sonnet-4-6",
     max_tokens=4000,
     messages=[
         {
